@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Clínica Aparecida Lima</title>
+  <style>
+    :root {
+      --vinho: #822d47;
+      --rosa: #f2b6bb;
+      --branco: #ffffff;
+      --cinza: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--rosa);
+      color: var(--cinza);
+    }
+
+    .container {
+      max-width: 600px;
+      background-color: var(--branco);
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      color: var(--vinho);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p.descricao {
+      text-align: center;
+      font-size: 14px;
+      color: var(--cinza);
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: var(--vinho);
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      background-color: #fefefe;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: var(--vinho);
+      color: var(--branco);
+      border: none;
+      padding: 14px;
+      width: 100%;
+      margin-top: 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #6b253a;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 20px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">
+      <img src="logo.png" alt="Clínica Aparecida Lima">
+    </div>
+
+    <h1>Feedback da Clínica</h1>
+    <p class="descricao">
+      Método Crio 40 Dias • Redução de Gordura Localizada • Emagrecimento • Tratamento Corporal • Harmonização Facial
+    </p>
+
+    <form action="https://formsubmit.co/sheylaalves@outlook.com" method="POST">
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+      <label for="procedimento">Qual procedimento realizou?</label>
+      <select id="procedimento" name="procedimento" required>
+        <option value="">Selecione</option>
+        <option>Método Crio 40 Dias</option>
+        <option>Redução de Gordura Localizada</option>
+        <option>Emagrecimento</option>
+        <option>Tratamento Corporal</option>
+        <option>Harmonização Facial</option>
+        <option>Outro</option>
+      </select>
+
+      <label for="avaliacao">Como você avalia nosso atendimento?</label>
+      <select id="avaliacao" name="avaliacao" required>
+        <option value="">Selecione</option>
+        <option>⭐ 1 - Ruim</option>
+        <option>⭐⭐ 2 - Regular</option>
+        <option>⭐⭐⭐ 3 - Bom</option>
+        <option>⭐⭐⭐⭐ 4 - Muito Bom</option>
+        <option>⭐⭐⭐⭐⭐ 5 - Excelente</option>
+      </select>
+
+      <label for="comentario">Comentário:</label>
+      <textarea id="comentario" name="comentario" rows="4" placeholder="Deixe seu comentário..."></textarea>
+
+      <label for="autorizacao">Autoriza divulgar seu feedback nas redes sociais?</label>
+      <select id="autorizacao" name="autorizacao" required>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <button type="submit">Enviar Feedback</button>
+    </form>
+
+    <footer>
+      © 2024 Clínica Aparecida Lima - Todos os direitos reservados.
+    </footer>
+  </div>
+
+</body>
+</html>
