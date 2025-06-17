@@ -1,5 +1,3 @@
-# Atualizar o conteúdo da página obrigado.html com estilo e nova logo
-obrigado_html_atualizado = """
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -37,46 +35,3 @@ obrigado_html_atualizado = """
   </div>
 </body>
 </html>
-"""
-
-# Atualizar CSS com estilos extras
-style_css_extra = """
-.mensagem {
-  text-align: center;
-  margin: 20px 0;
-  font-size: 16px;
-}
-
-.botao-voltar {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.logo-rodape {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.logo-rodape img {
-  width: 120px;
-  border-radius: 15px;
-}
-"""
-
-# Reescrevendo a página obrigado.html
-with open('/mnt/data/feedback-clinica/obrigado.html', 'w', encoding='utf-8') as f:
-    f.write(obrigado_html_atualizado)
-
-# Adicionar estilos extras ao CSS
-with open('/mnt/data/feedback-clinica/assets/css/style.css', 'a', encoding='utf-8') as f:
-    f.write(style_css_extra)
-
-# Criar logo-rodape fictício (placeholder)
-with open('/mnt/data/feedback-clinica/assets/imgs/logo-rodape.png', 'wb') as f:
-    f.write(b'')
-
-# Compactar novamente
-updated_zip_path = '/mnt/data/feedback-clinica-completo.zip'
-shutil.make_archive('/mnt/data/feedback-clinica-completo', 'zip', '/mnt/data/feedback-clinica')
-
-updated_zip_path
