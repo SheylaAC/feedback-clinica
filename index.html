@@ -117,20 +117,42 @@
     <form action="https://formsubmit.co/sheylaalves@outlook.com" method="POST">
  <input type="hidden" name="_next" value="https://sheylaac.github.io/feedback-clinica/obrigado.html">
 
+      <!-- Nome -->
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
+      <!-- Procedimentos -->
       <label for="procedimento">Qual procedimento realizou?</label>
       <select id="procedimento" name="procedimento" required>
         <option value="">Selecione</option>
-        <option>Método Crio 40 Dias</option>
-        <option>Redução de Gordura Localizada</option>
-        <option>Emagrecimento</option>
-        <option>Tratamento Corporal</option>
-        <option>Harmonização Facial</option>
+        <optgroup label="Tratamento Corporal">
+          <option>Método Crio 40 dias (Gordura localizada)</option>
+          <option>Harmonização de Glúteos</option>
+          <option>Flacidez</option>
+          <option>Gestão de Peso</option>
+          <option>Tratamento Capilar</option>
+          <option>Celulite</option>
+          <option>Harmonização Íntima</option>
+          <option>Clareamento Corporal</option>
+          <option>Hipertrofia e Definição Muscular</option>
+        </optgroup>
+        <optgroup label="Tratamento Facial">
+          <option>Bioestimulador de Colágeno</option>
+          <option>Toxina Botulínica Rosto Completo</option>
+          <option>Gerenciamento de Melasma</option>
+          <option>Harmonização Facial</option>
+          <option>Peeling de Hollywood</option>
+          <option>Preenchimento Facial</option>
+          <option>Microagulhamento com Drug Delivery</option>
+          <option>Skinbooster</option>
+          <option>Fios Sólidos</option>
+          <option>Ultrassom Microfocado</option>
+          <option>Gerenciamento de Pele (Rejuvenescimento, Acne, Cicatrização, Flacidez e Hipercromia)</option>
+        </optgroup>
         <option>Outro</option>
       </select>
 
+      <!-- Avaliação -->
       <label for="avaliacao">Como você avalia nosso atendimento?</label>
       <select id="avaliacao" name="avaliacao" required>
         <option value="">Selecione</option>
@@ -141,15 +163,19 @@
         <option>⭐⭐⭐⭐⭐ 5 - Excelente</option>
       </select>
 
+      <!-- Comentário -->
       <label for="comentario">Comentário:</label>
       <textarea id="comentario" name="comentario" rows="4" placeholder="Deixe seu comentário..."></textarea>
 
+      <!-- Autorização -->
       <label for="autorizacao">Autoriza divulgar seu feedback nas redes sociais?</label>
       <select id="autorizacao" name="autorizacao" required>
-        <option value="Sim">Sim</option>
-        <option value="Não">Não</option>
+        <option value="">Selecione</option>
+        <option>Sim</option>
+        <option>Não</option>
       </select>
 
+      <!-- Botão -->
       <button type="submit">Enviar Feedback</button>
     </form>
 
